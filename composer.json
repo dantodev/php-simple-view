@@ -1,0 +1,10 @@
+{
+  "name": "dtkahl/simple-php-view",
+  "license": "MIT",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Dtkahl\\SimplePhpView\\": "src/"
+    }
+  }
+}
