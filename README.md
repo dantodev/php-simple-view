@@ -1,2 +1,2 @@
-# simple-php-view
+# PHP simple view
 Simple PHP view renderer
