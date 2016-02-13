@@ -1,10 +1,10 @@
 {
-  "name": "dtkahl/simple-php-view",
+  "name": "dtkahl/php-simple-view",
   "license": "MIT",
   "require": {},
   "autoload": {
     "psr-4": {
-      "Dtkahl\\SimplePhpView\\": "src/"
+      "Dtkahl\\SimpleView\\": "src/"
     }
   }
 }
