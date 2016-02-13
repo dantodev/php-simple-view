@@ -1,4 +1,4 @@
-<?php namespace Dtkahl\SimplePhpView;
+<?php namespace Dtkahl\SimpleView;
 
 class ViewRenderer {
 
