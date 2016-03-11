@@ -28,7 +28,7 @@ class ViewRenderer {
    * @param array $data
    * @return string
    */
-  public function render($file, $data = [])
+  public function render(string $file, array $data = [])
   {
     foreach ($this->_view_paths as $path) {
       if (is_file($path.$file)) {
