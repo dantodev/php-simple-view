@@ -4,16 +4,30 @@ class ViewRenderer {
 
   private $_view_paths = [];
 
+  /**
+   * ViewRenderer constructor.
+   * @param string|string[] $view_paths
+   */
   public function __construct($view_paths = [])
   {
     $this->addViewPath($view_paths);
   }
 
+  /**
+   * @param string|string[] $view_paths
+   * @return $this
+   */
   public function addViewPath($view_paths)
   {
-    $this->_view_paths = is_array($view_paths) ? $view_paths : [$view_paths];
+    $this->_view_paths = (array) $view_paths;
+    return $this;
   }
 
+  /**
+   * @param string $file
+   * @param array $data
+   * @return string
+   */
   public function render($file, $data = [])
   {
     foreach ($this->_view_paths as $path) {
