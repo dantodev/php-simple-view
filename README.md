@@ -29,5 +29,5 @@ anywhere in PHP
 #### `addViewPaths($paths)`
 add Path(s) where render should search for view files. Returns renderer instance.
 
-####`render(string $file, array $data = [])
+####`render(string $file, array $data = [])`
 render given view file with given data (as local vars).
