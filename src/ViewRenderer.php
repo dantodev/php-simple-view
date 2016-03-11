@@ -19,7 +19,7 @@ class ViewRenderer {
    */
   public function addViewPath($view_paths)
   {
-    $this->_view_paths = (array) $view_paths;
+    $this->_view_paths = array_merge($this->_view_paths, (array) $view_paths);
     return $this;
   }
 
