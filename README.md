@@ -1,6 +1,12 @@
 # PHP simple view
 
-Simple PHP view renderer. **Require PHP >= 7.0.0!**
+Simple PHP view renderer.
+
+
+## Dependenvies
+
+* `PHP >= 7.0.0`
+
 
 ## Installation
 
