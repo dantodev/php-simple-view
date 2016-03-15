@@ -3,7 +3,7 @@
 Simple PHP view renderer.
 
 
-## Dependenvies
+## Dependencies
 
 * `PHP >= 7.0.0`
 
