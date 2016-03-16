@@ -1,3 +1,6 @@
+[![Latest Stable Version](https://poser.pugx.org/dtkahl/php-simple-view/v/stable)](https://packagist.org/packages/dtkahl/slim-skeleton)
+[![License](https://poser.pugx.org/dtkahl/php-simple-view/license)](https://packagist.org/packages/dtkahl/slim-skeleton)
+
 # PHP simple view
 
 Simple PHP view renderer.
