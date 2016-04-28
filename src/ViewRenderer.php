@@ -44,4 +44,14 @@ class ViewRenderer {
     throw new \RuntimeException("View `$file` does not exist.");
   }
 
+  /**
+   * @param string $file
+   * @param array $data
+   * @return string
+   */
+  public function __invoke($file, array $data = [])
+  {
+    return $this->render($file, $data);
+  }
+
 }
