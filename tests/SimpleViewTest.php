@@ -8,6 +8,7 @@ class SimpleViewTest extends \PHPUnit_Framework_TestCase {
     $obj = new \stdClass();
     $obj->foo2 = "bar2";
     $this->assertEquals('<div>bar</div>', $renderer->render('testview.php', ['foo'=> 'bar'], $obj));
+    $this->assertEquals('<div>bar</div>', $renderer('testview.php', ['foo'=> 'bar'], $obj));
   }
 
 }
