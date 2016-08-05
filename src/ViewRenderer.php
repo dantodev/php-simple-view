@@ -25,9 +25,10 @@ class ViewRenderer
     }
 
     /**
-     * @param string $file
+     * @param $file
      * @param array $data
      * @return string
+     * @throws \Exception
      */
     public function render($file, array $data = [])
     {
@@ -38,7 +39,12 @@ class ViewRenderer
                     include $file;
                 };
                 ob_start();
-                $run($path . $file, $data);
+                try {
+                    $run($path . $file, $data);
+                } catch (\Exception $e) {
+                    ob_clean();
+                    throw $e;
+                }
                 return ob_get_clean();
             }
         }
