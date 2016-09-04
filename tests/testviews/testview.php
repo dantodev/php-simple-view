@@ -1,1 +1,1 @@
-<div><?php echo $foo ?></div>
+<div><?php echo $foo ?>_<?php echo $kGlob ?></div>
